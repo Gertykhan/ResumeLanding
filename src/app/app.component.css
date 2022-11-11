@@ -1,0 +1,56 @@
+h1 {
+  color: #70FF00;
+
+  position: absolute;
+  width: 349px;
+  height: 182px;
+  left: 146px;
+  top: 350px;
+
+  font-size: 66px;
+  line-height: 82px;
+  letter-spacing: 0.1em;
+}
+h3{
+  color: #70FF00;
+}
+h5{
+  color: #70FF00;
+}
+.top {
+  height: 1634px;
+  width: 1728px;
+}
+.skills{
+  position: absolute;
+  width: 1728px;
+  height: 705px;
+  left: 0px;
+  top: 1634px;
+
+  background: #161616;
+}
+.projects {
+  height: 822px;
+  width: 1728px;
+}
+.graduate{
+  position: absolute;
+  width: 1728px;
+  height: 1487px;
+  left: 6px;
+  top: 3161px;
+
+  background: #161616;
+}
+#avatar{
+  position: absolute;
+  width: 545px;
+  left: 995px;
+  top: 328px;
+  border-radius: 300px;
+  box-shadow: 0px 5px 34px 8px rgba(0, 0, 0, 1);
+}
+.achievement{
+  text-transform: uppercase;
+}
