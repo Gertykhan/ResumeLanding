@@ -3,8 +3,8 @@
 
 body {
   position: relative;
-  width: 1728px;
-  height: 4648px;
+  max-width: 1728px;
+  height: 4600px;
   /*background-color: #161616;*/
   background: linear-gradient(130.36deg, #000000 0%, #272727 44.03%, #494949 99.99%, #727272 100%);
   font-size: 26px;

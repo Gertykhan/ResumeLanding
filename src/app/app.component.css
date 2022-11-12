@@ -9,48 +9,299 @@ h1 {
 
   font-size: 66px;
   line-height: 82px;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.07em;
 }
-h3{
+
+h3 {
   color: #70FF00;
 }
-h5{
+
+h5 {
   color: #70FF00;
+}
+
+a {
+  text-decoration: none;
+  color: #FFFFFF
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #828282;
+}
+.head{
+  display: inline-block;
+  width: 100%;
+  height: 100px;
+}
+#prime1{
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 59px;
+  color: #828282;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+
+  left: 100px;
+}
+#prime2{
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 59px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  position: relative;
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+  left: 106px;
 }
 .top {
   height: 1634px;
   width: 1728px;
 }
-.skills{
+
+.skills {
   position: absolute;
   width: 1728px;
-  height: 705px;
-  left: 0px;
+  height: 500px;
+  left: -22px;
   top: 1634px;
 
   background: #161616;
+
 }
+#skillsTitle{
+  position: relative;
+  left: 165px;
+
+
+  font-weight: bold;
+  font-size: 49px;
+  line-height: 57px;
+}
+.images img{
+  width: 200px;
+}
+.skill{
+  float: left;
+  width: 200px;
+  margin: 5px;
+}
+
+
 .projects {
   height: 822px;
   width: 1728px;
 }
-.graduate{
+#projectsTitle{
+  position: absolute;
+  left: 145px;
+  top: 2148px;
+
+  font-weight: bold;
+  font-size: 49px;
+  line-height: 57px;
+}
+
+.graduate {
   position: absolute;
   width: 1728px;
-  height: 1487px;
+  height: 1700px;
   left: 6px;
-  top: 3161px;
+  top: 2900px;
 
   background: #161616;
 }
-#avatar{
+
+#avatar {
   position: absolute;
   width: 545px;
-  left: 995px;
-  top: 328px;
+  left: 1050px;
+  top: 300px;
   border-radius: 300px;
   box-shadow: 0px 5px 34px 8px rgba(0, 0, 0, 1);
 }
-.achievement{
+
+#avatar:hover {
+  border: 5px groove #70FF00;
+}
+
+.jobTitle {
+  color: #E0E0E0;
+
+  position: absolute;
+  width: 580px;
+  height: 67px;
+  left: 138px;
+  top: 655px;
+
+  font-weight: bold;
+  font-size: 57px;
+  line-height: 67px;
+
+
+}
+
+.achievement {
+  color: #828282;
+
+
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 32px;
   text-transform: uppercase;
+}
+
+.number {
+  color: #4F4F4F;
+
+  font-weight: bold;
+  font-size: 86px;
+  line-height: 101px;
+}
+
+#acn1 {
+  position: absolute;
+  width: 50px;
+  height: 101px;
+  left: 146px;
+  top: 724px;
+}
+
+#acn2 {
+  position: absolute;
+  width: 157px;
+  height: 64px;
+  left: 250px;
+  top: 743px;
+
+}
+
+#acn3 {
+  position: absolute;
+  width: 99px;
+  height: 101px;
+  left: 397px;
+  top: 724px;
+
+}
+
+#acn4 {
+  position: absolute;
+  width: 630px;
+  height: 100px;
+  left: 447px;
+  top: 743px;
+}
+
+#dopDataTitle {
+  position: absolute;
+  width: 800px;
+  height: 46px;
+  left: 144px;
+  top: 1059px;
+
+  font-weight: bold;
+  font-size: 49px;
+  line-height: 57px;
+}
+
+#dataTitle {
+  position: absolute;
+  left: 146px;
+  top: 1141px;
+  width: 1000px;
+
+  color: #F2F2F2;
+  font-size: 28px;
+  line-height: 34px;
+}
+#graduateTitle{
+  position: relative;
+  text-align: center;
+
+
+  font-weight: bold;
+  font-size: 49px;
+  line-height: 57px;
+}
+#tit1{
+  /*position: relative;*/
+  /*width: 219px;*/
+  /*height: 46px;*/
+  /*left: 1159px;*/
+  /*top: 50px;*/
+  position: relative;
+  text-align: center;
+  font-size: 32px;
+
+}
+#tit2{
+  /*position: relative;*/
+  /*width: 219px;*/
+  /*height: 46px;*/
+  /*left: 200px;*/
+  /*top: 200px;*/
+  position: relative;
+  text-align: center;
+  font-size: 32px;
+
+}
+#tit3{
+  /*position: relative;*/
+  /*width: 219px;*/
+  /*height: 46px;*/
+  /*left: 1159px;*/
+  /*top: 350px;*/
+  position: relative;
+  text-align: center;
+  font-size: 32px;
+
+}
+#tit4{
+  /*position: relative;*/
+  /*width: 219px;*/
+  /*height: 46px;*/
+  /*left: 200px;*/
+  /*top: 500px;*/
+  position: relative;
+  text-align: center;
+  font-size: 32px;
+}
+.gradText{
+  width: 550px;
+
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 30px;
+
+  color: #FFFFFF;
+}
+#textTit1{
+  position: relative;
+  left: 1100px;
+  top: 50px;
+
+}
+#textTit2{
+  position: relative;
+  left: 200px;
+  top: 120px;
+
+}
+#textTit3{
+  position: relative;
+  left: 1100px;
+  top: 150px;
+
+}
+#textTit4{
+  position: relative;
+  left: 200px;
+  top: 200px;
+
 }
