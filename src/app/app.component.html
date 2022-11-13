@@ -1,11 +1,39 @@
+<a id="upperMove"></a>
 <div class="top">
   <div class="head">
+    <div id="prime">
+      <a [routerLink] = "['/']"  fragment="upperMove">
           <div id="prime1">Resume</div>
           <div id="prime2">Landing</div>
+      </a>
+    </div>
+    <a [routerLink]="['/']" fragment="skillsMove">
+      <div class="navigation" id="nav2"> Skills</div>
+    </a>
+    <a [routerLink]="['/']" fragment="projectsMove">
+      <div class="navigation" id="nav3"> Projects</div>
+    </a>
+    <a [routerLink]="['/']" fragment="aboutMove">
+      <div class="navigation" id="nav1"> Education</div>
+    </a>
+    <a href="https://vk.com/artspiteful" target="_blank">
+    <div id="nav4">
+      <img src="assets/VK.png" id="imgNav1">
+      <div class="navigation" id="VK">VKontakte</div>
+    </div>
+    </a>
+    <a href="https://github.com/Gertykhan" target="_blank">
+    <div id="nav5">
+      <img src="assets/github.png" id="git" id="imgNav2">
+      <div class="navigation">Github</div>
+    </div>
+    </a>
+<!--    <div id="butCell">-->
+      <button id="but">Contact me</button>
+<!--    </div>-->
+
 <!--          <a href="tel:+79150032717"> +7 (915) 003-27-17</a> <br>-->
-<!--          <a href="mailto:bat.pak@mail.ru">bat.pak@mail.ru</a> <br>-->
-<!--          <a href="https://github.com/Gertykhan" target="_blank">Github</a> <br>-->
-<!--          <a href="https://vk.com/artspiteful" target="_blank">ВКонтакте</a>-->
+<!--          <a href="mailto:bat.pak@mail.ru">bat.pak@mail.ru <br>-->
       <!--    Ну да, а что? Мб друзей хотя бы найду.-->
 <!--    <h5>Личные качества:</h5>-->
 <!--    <ul>-->
@@ -23,9 +51,12 @@
     <div class="achievement" id= "acn4"> месяца работы в Информационной безопасности</div>
     <div class="number" id= "acn1"> 22</div>
     <div class="achievement" id= "acn2">Года жизни</div>
+    <a href="https://t.me/Artspiteful" target="_blank" id="avatarLink"><img src="./assets/ivseenthis.jpg" alt="Моя фотография" id="avatar"></a>
+    <div class="circle" id="circle1"></div>
+    <div class="circle" id="circle2"></div>
+    <div class="circle" id="circle3"></div>
   </div>
-  <a href="https://t.me/Artspiteful" target="_blank"><img src="./assets/ivseenthis.jpg" alt="Моя фотография" id="avatar"></a>
-  <!--  todo настроить переход в тг-->
+  <!--  todo сделать красивую анимацию для перехода-->
   <div class="Group1">
     <h3 id="dopDataTitle"> Дополнительные сведения:</h3>
     <p id="dataTitle">В школьные годы начал увлекаться программированием. Начинал с языков: QBasic, Pascal, позже самостоятельно изучал
@@ -41,6 +72,7 @@
       также в 2022 году проходил практику, создавая нейросеть по распознаванию речи.</p>
   </div>
 </div>
+<a id="skillsMove"></a>
 <div class="skills">
   <h3 id="skillsTitle"> Профессиональные навыки:</h3>
   <div class="images">
@@ -54,18 +86,19 @@
     <div class="skill">  <img src="./assets/matlab.png" alt="matlab"></div>
   </div>
 </div>
+<a id="projectsMove"></a>
 <div class="projects">
   <h3 id="projectsTitle">Проектные работы: </h3>
-  <ul>
-    <li>объектно-ориентированное программирование на тему: «Создание кроссворда на языке C#»;</li>
-    <li>электротехника: «Расчет гармонического колебания четырёхполюсника»;</li>
-    <li>схемотехника: «Создание источника высоковольтного напряжения».</li>
-  </ul>
+<!--  <ul>-->
+<!--    <li>объектно-ориентированное программирование на тему: «Создание кроссворда на языке C#»;</li>-->
+<!--    <li>электротехника: «Расчет гармонического колебания четырёхполюсника»;</li>-->
+<!--    <li>схемотехника: «Создание источника высоковольтного напряжения».</li>-->
+<!--  </ul>-->
   <!-- todo Заменить говно на картинки + слайдер-->
 </div>
+<a id="aboutMove"></a>
 <div class="graduate">
   <h3 id="graduateTitle">Образование</h3>
-
   <div class="gradText" id="textTit1">
     <h5 id="tit1">Начальное образоание</h5>
     <p>
@@ -102,4 +135,9 @@
       (751100 «Защита информационных технологий»).
     </p>
   </div>
+  <div class="Line"></div>
+  <div class="superCircle" id="superCircle1"></div>
+  <div class="superCircle" id="superCircle2"></div>
+  <div class="superCircle" id="superCircle3"></div>
+  <div class="superCircle" id="superCircle4"></div>
 </div>

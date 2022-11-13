@@ -1,11 +1,13 @@
 h1 {
   color: #70FF00;
 
-  position: absolute;
+  position: relative;
   width: 349px;
   height: 182px;
   left: 146px;
   top: 350px;
+  margin: 0;
+  display: inline-block;
 
   font-size: 66px;
   line-height: 82px;
@@ -30,9 +32,12 @@ a:hover {
   color: #828282;
 }
 .head{
+  position: fixed;
   display: inline-block;
-  width: 100%;
-  height: 100px;
+  width: 1900px;
+  height: 55px;
+  z-index: 100;
+  background: linear-gradient(130.36deg, #000000 0%, #1f1f1f 44.03%, #3a3a3a 100%)
 }
 #prime1{
   font-weight: bold;
@@ -46,6 +51,7 @@ a:hover {
   padding: 0px;
 
   left: 100px;
+  cursor: pointer;
 }
 #prime2{
   font-weight: bold;
@@ -58,25 +64,163 @@ a:hover {
   margin: 0px;
   padding: 0px;
   left: 106px;
+  cursor: pointer;
+}
+#prime{
+  position: relative;
+  display: inline-block;
+}
+#prime:hover{
+  opacity: 0.8;
+}
+.navigation{
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 30px;
+
+  color: #FFFFFF;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  top: -10px;
+}
+#nav1{
+  left: 500px;
+}
+#nav1:hover{
+  opacity: 0.8;
+}
+#nav2{
+  left: 300px;
+}
+#nav2:hover{
+  opacity: 0.8;
+}
+#nav3{
+  left: 400px;
+}
+#nav3:hover{
+  opacity: 0.8;
+}
+#nav4{
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  left: 580px;
+}
+#nav4:hover{
+  opacity: 0.8;
+}
+#nav5{
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  left: 650px;
+}
+#nav5:hover{
+  opacity: 0.8;
+}
+#imgNav1{
+  position: relative;
+  width: 30px;
+  top: -5px;
+}
+#imgNav2{
+  position: relative;
+  width: 45px;
+  filter: invert();
+  top: 3px;
+}
+#but {
+  position: relative;
+  display: inline-block;
+
+  width: 180px;
+  height: 45px;
+  left: 720px;
+  top: -15px;
+
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 25px;
+
+  border-radius: 13px;
+  background: linear-gradient(#343434, #383838) padding-box,
+  linear-gradient(#70FF00, #FFFFFF) border-box;
+
+  border: 4px solid transparent;
+}
+#but:hover{
+  background: linear-gradient(white, white) padding-box,
+  linear-gradient(#70FF00, black) border-box;
+  color: #343434;
+  transform: translateY(5px);
 }
 .top {
+
   height: 1634px;
-  width: 1728px;
+  width: 1900px;
+  margin: 0 auto;
+}
+.Group1{
+  height: 50%;
+  width: 100%;
+}
+.Group2{
+  height: 50%;
+  width: 100%;
+}
+.circle{
+  border-radius: 100%;
+}
+#circle1{
+  width: 50px;
+  height: 50px;
+  left: 1000px;
+  top: -550px;
+  display: inline-block;
+  position: relative;
+
+  background: #222222;
+  box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
+}
+#circle2{
+  width: 40px;
+  height: 40px;
+  left: 450px;
+  top: -465px;
+  display: inline-block;
+  position: relative;
+
+  background: #4F4F4F;
+}
+#circle3{
+  width: 30px;
+  height: 30px;
+  left: 980px;
+  top: -150px;
+  display: inline-block;
+  position: relative;
+
+  background: #BDBDBD;
 }
 
 .skills {
-  position: absolute;
-  width: 1728px;
+  position: relative;
+  width: 1905px;
   height: 500px;
-  left: -22px;
-  top: 1634px;
+  top: 0px;
+  margin: auto;
 
   background: #161616;
 
 }
 #skillsTitle{
   position: relative;
-  left: 165px;
+  top: 30px;
+  left: 146px;
+  height: 100px;
 
 
   font-weight: bold;
@@ -84,23 +228,26 @@ a:hover {
   line-height: 57px;
 }
 .images img{
-  width: 200px;
+  width: 220px;
 }
 .skill{
   float: left;
-  width: 200px;
+  width: 220px;
   margin: 5px;
 }
 
 
 .projects {
+  position: relative;
+  top: 0px;
   height: 822px;
   width: 1728px;
+  margin: auto;
 }
 #projectsTitle{
-  position: absolute;
+  position: relative;
   left: 145px;
-  top: 2148px;
+  top: 0px;
 
   font-weight: bold;
   font-size: 49px;
@@ -108,40 +255,45 @@ a:hover {
 }
 
 .graduate {
-  position: absolute;
-  width: 1728px;
+  position: relative;
+  width: 1900px;
   height: 1700px;
   left: 6px;
-  top: 2900px;
+  margin: auto;
+  top: 0px;
 
   background: #161616;
 }
 
 #avatar {
-  position: absolute;
   width: 545px;
-  left: 1050px;
-  top: 300px;
   border-radius: 300px;
   box-shadow: 0px 5px 34px 8px rgba(0, 0, 0, 1);
 }
-
 #avatar:hover {
   border: 5px groove #70FF00;
+}
+#avatarLink{
+  position: relative;
+  left: 1050px;
+  top: 0px;
 }
 
 .jobTitle {
   color: #E0E0E0;
 
-  position: absolute;
+  position: relative;
   width: 580px;
   height: 67px;
-  left: 138px;
-  top: 655px;
+  left: -210px;
+  top: 430px;
 
   font-weight: bold;
   font-size: 57px;
   line-height: 67px;
+
+  margin: 0;
+  display: inline-block;
 
 
 }
@@ -165,45 +317,57 @@ a:hover {
 }
 
 #acn1 {
-  position: absolute;
-  width: 50px;
+  position: relative;
+  width: content-box;
   height: 101px;
-  left: 146px;
-  top: 724px;
+  left: -1460px;
+  top: 550px;
+
+  margin: 0;
+  display: inline-block;
 }
 
 #acn2 {
-  position: absolute;
+  position: relative;
   width: 157px;
   height: 64px;
-  left: 250px;
-  top: 743px;
+  left: -1445px;
+  top: 550px;
+
+  margin: 0;
+  display: inline-block;
 
 }
 
 #acn3 {
-  position: absolute;
-  width: 99px;
+  position: relative;
+  width: content-box;
   height: 101px;
-  left: 397px;
-  top: 724px;
+  left: -520px;
+  top: 550px;
+
+  margin: 0;
+  display: inline-block;
 
 }
 
 #acn4 {
-  position: absolute;
+  position: relative;
   width: 630px;
   height: 100px;
-  left: 447px;
-  top: 743px;
+  left: -512px;
+  top: 550px;
+
+  margin: 0;
+  display: inline-block;
 }
 
 #dopDataTitle {
-  position: absolute;
+  position: relative;
   width: 800px;
   height: 46px;
-  left: 144px;
-  top: 1059px;
+  left: 146px;
+  top: 230px;
 
   font-weight: bold;
   font-size: 49px;
@@ -211,9 +375,9 @@ a:hover {
 }
 
 #dataTitle {
-  position: absolute;
+  position: relative;
   left: 146px;
-  top: 1141px;
+  top: 220px;
   width: 1000px;
 
   color: #F2F2F2;
@@ -303,5 +467,43 @@ a:hover {
   position: relative;
   left: 200px;
   top: 200px;
+}
+.Line{
+  position: relative;
+  display: inline-block;
+  margin-left: 0;
+  border-left: 5px solid #70FF00;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  height: 1250px;
+  top: -570px;
+  z-index: 50;
+}
+.superCircle{
+  position: relative;
+  left: 50%;
+  z-index: 51;
+  box-sizing: border-box;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
 
+  background: #070707;
+  border: 4px solid #70FF00;
+}
+#superCircle1{
+  top: -1275px;
+}
+#superCircle2{
+  top: -1593px;
+}
+#superCircle3{
+  top: -2100px;
+}
+#superCircle4{
+  top: -2522px;
 }
