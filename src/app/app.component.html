@@ -29,12 +29,16 @@
     </div>
     </a>
 <!--    <div id="butCell">-->
-      <button id="but">Contact me</button>
-<!--    </div>-->
-
-<!--          <a href="tel:+79150032717"> +7 (915) 003-27-17</a> <br>-->
-<!--          <a href="mailto:bat.pak@mail.ru">bat.pak@mail.ru <br>-->
-      <!--    Ну да, а что? Мб друзей хотя бы найду.-->
+      <button (click)="press()" id="but">Contact me</button>
+    <div @animationTriggerName *ngIf="tester" class="table">
+      <div (mouseenter)="switchColor()" (mouseleave)="switchBack()" class="tableElement" id="tableElement1">
+        <a [ngStyle]="{'color': table1Color}" href="tel:+79150032717" class="tableTxt"> +7 (915) 003-27-17</a>
+      </div>
+      <div id="uShallNotPass"></div>
+      <div (mouseenter)="switchColor2()" (mouseleave)="switchBack2()" class="tableElement" id="tableElement2">
+        <a [ngStyle]="{'color': table2Color}" href="mailto:bat.pak@mail.ru" class="tableTxt">bat.pak@mail.ru</a>
+      </div>
+    </div>
 <!--    <h5>Личные качества:</h5>-->
 <!--    <ul>-->
 <!--      <li>Ответственность;</li>-->
@@ -43,6 +47,7 @@
 <!--      <li>Аналитические способности;</li>-->
 <!--      <li>Креативность.</li>-->
 <!--    </ul>-->
+<!--    todo добавить блок с качествами, если успею-->
   </div>
   <div class="Group2">
     <h1>Бобылев Артём Владимирович</h1>
