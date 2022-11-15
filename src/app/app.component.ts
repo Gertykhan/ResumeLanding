@@ -12,7 +12,7 @@ import {animate, style, transition, trigger} from "@angular/animations";
         animate('1.2s', style({ opacity: 1 })),
       ]),
       transition('* => void', [
-        animate('1.2s', style({ opacity: 0 })),
+        animate('0.4s', style({ opacity: 0 })),
       ]),
     ])
   ]
@@ -23,6 +23,7 @@ export class AppComponent {
   table1Color: string = "#FFFFFF";
   table2Color: string = "#FFFFFF";
   tester = false;
+  topper: string = "-13px";
 
   switchColor() {
     this.table1Color = "#343434"
@@ -38,6 +39,16 @@ export class AppComponent {
   }
   press(){
     this.tester = !this.tester;
-  //  todo сделать смещение вниз
+  }
+  pressDecoration1(){
+    this.topper = "-11px";
+  }
+  pressDecoration2(){
+    this.topper = "-13px";
+  }
+  displayZero(){
+    if (this.tester ===true){
+      this.tester = false;
+    }
   }
 }
