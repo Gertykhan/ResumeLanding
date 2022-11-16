@@ -4,6 +4,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import {RouterModule, Routes} from "@angular/router";
+import { NextDirective } from './next.directive';
+import { PrevDirective } from './prev.directive';
 
 const routes: Routes = [
   {
@@ -15,7 +17,9 @@ const routes: Routes = [
 @NgModule({
 
   declarations: [
-    AppComponent
+    AppComponent,
+    NextDirective,
+    PrevDirective
   ],
   imports: [
     BrowserModule,

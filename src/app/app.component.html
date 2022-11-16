@@ -50,7 +50,8 @@
     <div class="number" id="acn1"> 22</div>
     <div class="achievement" id="acn2">Года жизни</div>
     <a href="https://t.me/Artspiteful" target="_blank" id="avatarLink"><img src="./assets/ivseenthis.jpg"
-                                                                            alt="Моя фотография" id="avatar"></a>
+                                                                            alt="Моя фотография" id="avatar">
+    </a>
     <div class="circle" id="circle1"></div>
     <div class="circle" id="circle2"></div>
     <div class="circle" id="circle3"></div>
@@ -92,32 +93,32 @@
   <h3 id="projectsTitle">Проектные работы: </h3>
   <div class="slider-wrap">
     <div class="slider-main">
-      <div class="slider-item">
+      <div class="slider-item"@animationNext>
         <img class="cat" src="./assets/cat1.jpg">
       </div>
-      <div class="slider-item">
+      <div class="slider-item"@animationNext>
         <img class="cat" src="./assets/cat2.jpg">
       </div>
-      <div class="slider-item">
+      <div class="slider-item"@animationNext>
         <img class="cat" src="./assets/cat3.jpg">
       </div>
-      <div class="slider-item">
+      <div class="slider-item" @animationNext>
         <img class="cat" src="./assets/cat4.jpg">
       </div>
-      <div class="slider-item">
+      <div class="slider-item" @animationNext>
         <img class="cat" src="./assets/cat5.jpg">
       </div>
-      <div class="slider-item">
+      <div class="slider-item" @animationNext>
         <img class="cat" src="./assets/cat6.jpg">
       </div>
-      <div class="button-area">
-        <button type="button" class="prev">Left</button>
-        <button type="button" class="next">Right</button>
-      </div>
+    </div>
+    <div class="button-area">
+      <button type="button" class="prev" appPrev><img src="assets/sl-arrow_l.svg" id="arrowLeft"></button>
+      <button type="button" class="next" appNext><img src="assets/sl-arrow_r.svg" id="arrowRight"></button>
     </div>
   </div>
+  <div id="hope">Надеюсь в будущем тут будут не коты</div>
 </section>
-<!--todo надеюсь в будущем тут будут не коты -->
 <a id="aboutMove"></a>
 <div class="graduate">
   <h3 id="graduateTitle">Образование</h3>

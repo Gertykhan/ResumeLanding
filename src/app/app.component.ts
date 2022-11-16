@@ -14,7 +14,10 @@ import {animate, style, transition, trigger} from "@angular/animations";
       transition('* => void', [
         animate('0.4s', style({ opacity: 0 })),
       ]),
-    ])
+    ]),
+    trigger( "animationNext",[
+      transition('* => *', animate('1s'))
+      ])
   ]
 })
 export class AppComponent {

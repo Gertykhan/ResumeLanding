@@ -328,27 +328,75 @@ a:hover {
   width: 600px;
   display: inline-block;
   margin: 0 16px;
+  border: 1px solid inherit;
 }
 .cat{
   width: 600px;
   border-radius: 2px;
+  /*display: none;*/
 }
 .button-area{
   position: absolute;
-  top: 155px;
+  top: 50%;
 }
 .prev{
   position: absolute;
   left: 17px;
   transform: translate(-50%, -50%);
+  font-size: 0;
+  width: 30px;
+  height: 60px;
+  background: inherit;
+  border: none;
+}
+#arrowLeft{
+  width: 30px;
+  opacity: 0;
+}
+#arrowLeft:hover{
+  opacity: 1;
+  transition: opacity 1s;
+}
+#arrowRight{
+  width: 30px;
+  opacity: 0;
+}
+#arrowRight:hover{
+  opacity: 1;
+  transition: opacity 1s;
 }
 .next{
   position: absolute;
-  left: 1883px;
+  left: 1870px;
   transform: translate(-50%, -50%);
-
-
+  font-size: 0;
+  width: 30px;
+  height: 60px;
+  background: inherit;
+  border: none;
 }
+#hope{
+  color: #E0E0E0;
+
+  position: relative;
+  width: 1100px;
+  height: 30px;
+  left: 450px;
+  top: 100px;
+
+  font-weight: bold;
+  font-size: 57px;
+  line-height: 67px;
+
+  margin: 0;
+  display: inline-block;
+  opacity: 0;
+  transition: opacity 1s;
+}
+#hope:hover{
+  opacity: 1;
+}
+
 
 .graduate {
   position: relative;
@@ -389,8 +437,6 @@ a:hover {
 
   margin: 0;
   display: inline-block;
-
-
 }
 
 .achievement {
