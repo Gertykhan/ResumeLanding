@@ -307,7 +307,8 @@ a:hover {
   position: relative;
   top: 0px;
   height: 822px;
-  width: 1900px;
+  width: 100%;
+  max-width: 1900px;
   margin: auto;
 }
 #projectsTitle{
