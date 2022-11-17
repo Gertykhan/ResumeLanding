@@ -34,7 +34,8 @@ a:hover {
 .head{
   position: fixed;
   display: inline-block;
-  width: 1900px;
+  width: 100%;
+  max-width: 1900px;
   height: 55px;
   z-index: 100;
   background: linear-gradient(130.36deg, #000000 0%, #1f1f1f 44.03%, #3a3a3a 100%);
@@ -214,7 +215,8 @@ a:hover {
 .top {
 
   height: 1634px;
-  width: 1900px;
+  width: 100%;
+  max-width: 1900px;
   margin: 0 auto;
 }
 .Group1{
@@ -262,25 +264,29 @@ a:hover {
 
 .skills {
   position: relative;
-  width: 1900px;
+  width: 100%;
+  max-width: 1900px;
   height: 500px;
   top: 0px;
   margin: auto;
-
   background: #161616;
+  display: flex;
 
 }
 #skillsTitle{
   position: relative;
   display: inline-block;
-  top: 30px;
-  left: 146px;
+  top: -10px;
+  left: 115px;
   height: 100px;
+
 
 
   font-weight: bold;
   font-size: 49px;
   line-height: 57px;
+}
+.images{
 }
 .images img{
   width: 220px;
@@ -338,10 +344,12 @@ a:hover {
 .button-area{
   position: absolute;
   top: 50%;
+  width: 100%;
+  width-max: 1900px;
 }
 .prev{
   position: absolute;
-  left: 17px;
+  left: 23px;
   transform: translate(-50%, -50%);
   font-size: 0;
   width: 30px;
@@ -351,23 +359,13 @@ a:hover {
 }
 #arrowLeft{
   width: 30px;
-  opacity: 0;
-}
-#arrowLeft:hover{
-  opacity: 1;
-  transition: opacity 1s;
 }
 #arrowRight{
   width: 30px;
-  opacity: 0;
-}
-#arrowRight:hover{
-  opacity: 1;
-  transition: opacity 1s;
 }
 .next{
   position: absolute;
-  left: 1870px;
+  right: 10px;
   transform: translate(-50%, -50%);
   font-size: 0;
   width: 30px;
@@ -400,7 +398,8 @@ a:hover {
 
 .graduate {
   position: relative;
-  width: 1900px;
+  width: 100%;
+  max-width: 1900px;
   height: 1700px;
   margin: auto;
   top: 0px;
@@ -610,7 +609,7 @@ a:hover {
   top: 200px;
 }
 .Line{
-  position: relative;
+  position: absolute;
   display: inline-block;
   margin-left: 0;
   border-left: 5px solid #70FF00;
@@ -618,7 +617,7 @@ a:hover {
   margin-right: -50%;
   transform: translate(-50%, -50%);
   height: 1250px;
-  top: -570px;
+  top: 755px;
   z-index: 50;
 }
 .superCircle{
@@ -637,14 +636,14 @@ a:hover {
   border: 4px solid #70FF00;
 }
 #superCircle1{
-  top: -1275px;
+  top: -14px;
 }
 #superCircle2{
-  top: -1593px;
+  top: -336px;
 }
 #superCircle3{
-  top: -2100px;
+  top: -841px;
 }
 #superCircle4{
-  top: -2522px;
+  top: -1242px;
 }

@@ -1,91 +1,93 @@
 <a id="upperMove"></a>
 <div class="top">
-  <nav class="head">
-    <div id="prime">
-      <a [routerLink]="['/']" fragment="upperMove">
-        <div id="prime1">Resume</div>
-        <div id="prime2">Landing</div>
+    <nav class="head">
+      <div id="prime">
+        <a [routerLink]="['/']" fragment="upperMove">
+          <div id="prime1">Resume</div>
+          <div id="prime2">Landing</div>
+        </a>
+      </div>
+      <a [routerLink]="['/']" fragment="skillsMove">
+        <div class="navigation" id="nav2"> Skills</div>
       </a>
+      <a [routerLink]="['/']" fragment="projectsMove">
+        <div class="navigation" id="nav3"> Projects</div>
+      </a>
+      <a [routerLink]="['/']" fragment="aboutMove">
+        <div class="navigation" id="nav1"> Education</div>
+      </a>
+      <a href="https://vk.com/artspiteful" target="_blank">
+        <div id="nav4">
+          <img src="assets/VK.png" id="imgNav1">
+          <div class="navigation" id="VK">VKontakte</div>
+        </div>
+      </a>
+      <a href="https://github.com/Gertykhan" target="_blank">
+        <div id="nav5">
+          <img src="assets/github.png" id="git" id="imgNav2">
+          <div class="navigation">Github</div>
+        </div>
+      </a>
+      <!--    <div id="butCell">-->
+      <button (mousedown)="pressDecoration1()" (mouseup)="pressDecoration2()" [ngStyle]="{'top': topper}"
+              (click)="press()" id="but">Contact me
+      </button>
+      <div @animationTriggerName *ngIf="tester" (mouseleave)="displayZero()" class="table">
+        <div (mouseenter)="switchColor()" (mouseleave)="switchBack()" class="tableElement" id="tableElement1">
+          <a [ngStyle]="{'color': table1Color}" href="tel:+79150032717" class="tableTxt"> +7 (915) 003-27-17</a>
+        </div>
+        <div id="uShallNotPass"></div>
+        <div (mouseenter)="switchColor2()" (mouseleave)="switchBack2()" class="tableElement" id="tableElement2">
+          <a [ngStyle]="{'color': table2Color}" href="mailto:bat.pak@mail.ru" class="tableTxt">bat.pak@mail.ru</a>
+        </div>
+      </div>
+    </nav>
+    <div class="Group2">
+      <h1>Бобылев Артём Владимирович</h1>
+      <div class="jobTitle">Frontend разработчик</div>
+      <div class="number" id="acn3"> 3</div>
+      <div class="achievement" id="acn4"> месяца работы в Информационной безопасности</div>
+      <div class="number" id="acn1"> 22</div>
+      <div class="achievement" id="acn2">Года жизни</div>
+      <a href="https://t.me/Artspiteful" target="_blank" id="avatarLink"><img src="./assets/ivseenthis.jpg"
+                                                                              alt="Моя фотография" id="avatar">
+      </a>
+      <div class="circle" id="circle1"></div>
+      <div class="circle" id="circle2"></div>
+      <div class="circle" id="circle3"></div>
     </div>
-    <a [routerLink]="['/']" fragment="skillsMove">
-      <div class="navigation" id="nav2"> Skills</div>
-    </a>
-    <a [routerLink]="['/']" fragment="projectsMove">
-      <div class="navigation" id="nav3"> Projects</div>
-    </a>
-    <a [routerLink]="['/']" fragment="aboutMove">
-      <div class="navigation" id="nav1"> Education</div>
-    </a>
-    <a href="https://vk.com/artspiteful" target="_blank">
-      <div id="nav4">
-        <img src="assets/VK.png" id="imgNav1">
-        <div class="navigation" id="VK">VKontakte</div>
-      </div>
-    </a>
-    <a href="https://github.com/Gertykhan" target="_blank">
-      <div id="nav5">
-        <img src="assets/github.png" id="git" id="imgNav2">
-        <div class="navigation">Github</div>
-      </div>
-    </a>
-    <!--    <div id="butCell">-->
-    <button (mousedown)="pressDecoration1()" (mouseup)="pressDecoration2()" [ngStyle]="{'top': topper}"
-            (click)="press()" id="but">Contact me
-    </button>
-    <div @animationTriggerName *ngIf="tester" (mouseleave)="displayZero()" class="table">
-      <div (mouseenter)="switchColor()" (mouseleave)="switchBack()" class="tableElement" id="tableElement1">
-        <a [ngStyle]="{'color': table1Color}" href="tel:+79150032717" class="tableTxt"> +7 (915) 003-27-17</a>
-      </div>
-      <div id="uShallNotPass"></div>
-      <div (mouseenter)="switchColor2()" (mouseleave)="switchBack2()" class="tableElement" id="tableElement2">
-        <a [ngStyle]="{'color': table2Color}" href="mailto:bat.pak@mail.ru" class="tableTxt">bat.pak@mail.ru</a>
-      </div>
+    <!--  todo сделать красивую анимацию для перехода-->
+    <div class="Group1">
+      <h3 id="dopDataTitle"> Дополнительные сведения:</h3>
+      <p id="dataTitle">В школьные годы начал увлекаться программированием. Начинал с языков: QBasic, Pascal, позже
+        самостоятельно изучал
+        C++,
+        в университете работал с языками C# и Java. В данный момент обучаюсь на цифровой кафедре по специальности
+        «Web-разработчик»,
+        где изучаю Python, Javascript. Всю жизнь активно занимался спортом: каратэ, капоэйро, бокс, где выступал на
+        соревнованиях и занимал призовые места.
+        В этот период приобрел как опыт работы в команде, так и навыки обучаемости новым профессиям. В 2021 г.,
+        пройдя обучение в автошколе, получил водительские права класса «В».
+        В 2021 году проходил практику, занимаясь организацией документации ФСТЭКа по системе Zettelcasten в программе
+        Obsidian,
+        также в 2022 году проходил практику, создавая нейросеть по распознаванию речи.</p>
     </div>
-  </nav>
-  <div class="Group2">
-    <h1>Бобылев Артём Владимирович</h1>
-    <div class="jobTitle">Frontend разработчик</div>
-    <div class="number" id="acn3"> 3</div>
-    <div class="achievement" id="acn4"> месяца работы в Информационной безопасности</div>
-    <div class="number" id="acn1"> 22</div>
-    <div class="achievement" id="acn2">Года жизни</div>
-    <a href="https://t.me/Artspiteful" target="_blank" id="avatarLink"><img src="./assets/ivseenthis.jpg"
-                                                                            alt="Моя фотография" id="avatar">
-    </a>
-    <div class="circle" id="circle1"></div>
-    <div class="circle" id="circle2"></div>
-    <div class="circle" id="circle3"></div>
   </div>
-  <!--  todo сделать красивую анимацию для перехода-->
-  <div class="Group1">
-    <h3 id="dopDataTitle"> Дополнительные сведения:</h3>
-    <p id="dataTitle">В школьные годы начал увлекаться программированием. Начинал с языков: QBasic, Pascal, позже
-      самостоятельно изучал
-      C++,
-      в университете работал с языками C# и Java. В данный момент обучаюсь на цифровой кафедре по специальности
-      «Web-разработчик»,
-      где изучаю Python, Javascript. Всю жизнь активно занимался спортом: каратэ, капоэйро, бокс, где выступал на
-      соревнованиях и занимал призовые места.
-      В этот период приобрел как опыт работы в команде, так и навыки обучаемости новым профессиям. В 2021 г.,
-      пройдя обучение в автошколе, получил водительские права класса «В».
-      В 2021 году проходил практику, занимаясь организацией документации ФСТЭКа по системе Zettelcasten в программе
-      Obsidian,
-      также в 2022 году проходил практику, создавая нейросеть по распознаванию речи.</p>
-  </div>
-</div>
 <a id="skillsMove"></a>
 <div class="skills">
-  <h3 id="skillsTitle"> Профессиональные навыки:</h3>
-  <div class="images">
-    <div class="skill"><img src="./assets/js.png" alt="JS"></div>
-    <div class="skill"><img src="./assets/TS.png" alt="TS"></div>
-    <div class="skill"><img src="./assets/NG.png" alt="NG"></div>
-    <div class="skill"><img src="./assets/html.png" alt="HTML"></div>
-    <div class="skill"><img src="./assets/css.png" alt="CSS"></div>
-    <div class="skill"><img src="./assets/Pyth.png" alt="Python"></div>
-    <div class="skill"><img src="./assets/C++.png" alt="C++"></div>
-    <div class="skill"><img src="./assets/matlab.png" alt="matlab"></div>
-    <!--    todo надписи снизу-->
+  <div>
+    <h3 id="skillsTitle"> Профессиональные навыки:</h3>
+    <div class="images">
+      <div class="skill"><img src="./assets/js.png" alt="JS"></div>
+      <div class="skill"><img src="./assets/TS.png" alt="TS"></div>
+      <div class="skill"><img src="./assets/NG.png" alt="NG"></div>
+      <div class="skill"><img src="./assets/html.png" alt="HTML"></div>
+      <div class="skill"><img src="./assets/css.png" alt="CSS"></div>
+      <div class="skill"><img src="./assets/Pyth.png" alt="Python"></div>
+      <div class="skill"><img src="./assets/C++.png" alt="C++"></div>
+      <div class="skill"><img src="./assets/matlab.png" alt="matlab"></div>
+      <!--    todo надписи снизу-->
+    </div>
   </div>
 </div>
 <a id="projectsMove"></a>
@@ -93,13 +95,13 @@
   <h3 id="projectsTitle">Проектные работы: </h3>
   <div class="slider-wrap">
     <div class="slider-main">
-      <div class="slider-item"@animationNext>
+      <div class="slider-item" @animationNext>
         <img class="cat" src="./assets/cat1.jpg">
       </div>
-      <div class="slider-item"@animationNext>
+      <div class="slider-item" @animationNext>
         <img class="cat" src="./assets/cat2.jpg">
       </div>
-      <div class="slider-item"@animationNext>
+      <div class="slider-item" @animationNext>
         <img class="cat" src="./assets/cat3.jpg">
       </div>
       <div class="slider-item" @animationNext>
